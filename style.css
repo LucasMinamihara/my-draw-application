@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #7fffd4;
+  padding: 20px;
+}
+header > div {
+  display: inline-block;
+  background-color: azure;
+  padding: 10px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+.reset,
+.eraser,
+.brush {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.reset:hover,
+.eraser:hover,
+.brush:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+#screen {
+  width: 1200px;
+  height: 600px;
+  background-color: #ffffffff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
